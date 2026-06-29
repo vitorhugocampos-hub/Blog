@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-  header {
-                background-color: #0026fff3;
-                color: #0004ff;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-            }
+    header {
+    background-color: #0026fff3;
+    color: #0004ff;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    }
 
-            main {
-                background-color: #eeff00d7;
-                color: #183C63;
-            }
-        </style>
+    main {
+    background-color: #eeff00d7;
+    color: #183C63;
+    }
+    </style>
 </head>
 
 <body>
@@ -27,27 +27,13 @@
         <button>❤️<span>0</span></button>
         <button>👍<span>0</span></button>
         <style>
-          
+            <script>const botao=document.querySelectorAll("button");
+            botao.addEventListener("click", botaoClicado);
 
-        <img src="imagem-blog.png"
-            alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-    </header>
-    <main>
-        <h2>Meu primeiro post</h2>
-        <p>Por: Vitor Hugo Campos</p>
-        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-            tecnologia.</p>
-      <button>👍<span>0</span></button>
-        <button>👎<span>0</span></button>
-            </main>
-    <script>
-        const botao = document.querySelector("button");
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            let texto = botao.querySelector("span");
-            texto.textContent++;
-        }
-    </script>
-</body>
+            function botaoClicado() {
+                let texto=botao.querySelector("span");
+                texto.textContent++;
+            }
 
-</html>
+            <img src="imagem-blog.png"
+            alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco."></header><main><h2>Meu primeiro post</h2><p>Por: Vitor Hugo Campos</p><p>Boas-vindas ao meu novo blog ! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p><button>👍<span>0</span></button><button>👎<span>0</span></button></main></script></body></html>
