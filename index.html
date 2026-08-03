@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Meu Blog</title>
     <style>
         header {
             background-color: #183C63;
@@ -21,14 +21,13 @@
         }
 
         main {
-            background-color: #e1e79e;
-            color: #081e35e6;
+            background-color: #d4adcf;
+            color: #183C63;
             display: flex;
             align-items: center;
             margin-bottom: 30px;
             flex-direction: column;
             gap: 20px;
-
         }
 
         img {
@@ -73,24 +72,83 @@
     <header>
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
         <button>👍<span>0</span></button>
-        <button>👎<span>0</span></button>
+
     </header>
     <main>
-        <img src="imagem-blog (1).png"
-            alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-        <div class="artigo-autor">
-            <h2>Meu primeiro post</h2>
-            <p>Por: Vitor Hugo Campos</p>
-            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                tecnologia.</p>
-            <button>👍<span>0</span></button>
-            <button>👎<span>0</span></button>
-        </div>
-    </main>
-    <script>
-        const botao = document.querySelectorAll("button");
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Vitor Hugo</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
 
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Vitor Hugo</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Vitor Hugo</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Vitor Hugo</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Vitor Hugo</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
         botoes.forEach(function (botao) {
             let curtiu = false;
             botao.addEventListener("click", botaoClicado);
@@ -107,6 +165,7 @@
             }
         })
     </script>
+
 </body>
 
 </html>
